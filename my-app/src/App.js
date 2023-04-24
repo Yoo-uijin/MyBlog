@@ -1,10 +1,24 @@
 import "./App.css";
-import Header from "./components/Header";
+import Home from "./pages/Home";
 
 function App() {
+  const words = ["hi", "hello", "how", "hour", "great", "rain"];
+
+  // const callback = (element) => {
+  //   return element[0] === "h";
+  // };
+
+  // const filterWords = words.filter(callback);
+
+  const filterWords = words.filter((element) => {
+    return element[0] === "h";
+  });
+
+  console.log(filterWords);
+
   return (
     <div className="App">
-      <Header />
+      <Home />
     </div>
   );
 }

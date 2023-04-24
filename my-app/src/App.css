@@ -1,18 +1,87 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap");
 
-body {
-  font-family: "Nanum Gothic", sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  background-color: #f6f6f6;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Home */
+
 /* Header */
-.Header h1 {
+header {
+  padding: 1.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.head_logo {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-style: italic;
+  text-shadow: 1px 1px 1px rgb(106, 106, 106);
 }
 
-/* DustList */
-.DustList {
+.head_button {
+  position: relative;
+
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  padding: 0 0.625rem;
+}
+
+/* Dropdown */
+.Dropdown {
+  position: absolute;
+  right: 0;
+  background-color: white;
+  color: black;
+  width: 8rem;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+/* Weather */
+.Weather {
+  border-radius: 5px;
+  padding: 0.75rem;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+/* WeatherAPI */
+.WeatherIcon_wrapper {
+  padding: 0.75rem;
+  margin: 0 auto;
+  font-size: 1.75rem;
+}
+
+/* Phrase */
+.Phrase {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+}
+
+.Phrase_text {
+  color: white;
+  margin-bottom: 0.625rem;
+}
+
+.Phrase_writer {
+  color: white;
 }
