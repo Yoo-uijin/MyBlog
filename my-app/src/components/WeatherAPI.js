@@ -37,7 +37,7 @@ const WeatherAPI = () => {
       <li className="WeatherIcon_wrapper">
         <WeatherIcon data={data.weather[0].main} />
       </li>
-      <li>현재기온: {data.main.temp}</li>
+      <li>기온: {data.main.temp}°</li>
     </>
   );
 };

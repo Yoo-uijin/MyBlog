@@ -1,11 +1,15 @@
 import React from "react";
-import Weather from "./Weather";
+import WeatherAPI from "./WeatherAPI";
+import DustAPI from "./DustAPI";
 
 const Dropdown = () => {
   return (
-    <div className="Dropdown">
-      <Weather />
-    </div>
+    <>
+      <ul className="Dropdown">
+        <WeatherAPI />
+        <DustAPI />
+      </ul>
+    </>
   );
 };
 

@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import Phrase from "../components/Phrase";
-import Dropdown from "../components/Dropdown";
+import { phraseList } from "../util/phrases";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import Dropdown from "../components/Dropdown";
 
 const Home = () => {
   const [view, setView] = useState(false);
@@ -27,7 +28,7 @@ const Home = () => {
         </button>
       </header>
 
-      <Phrase />
+      <Phrase phraseList={phraseList} />
     </div>
   );
 };

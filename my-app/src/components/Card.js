@@ -1,13 +1,12 @@
 import React from "react";
 
-const Card = ({ text, type }) => {
-  const cardType = ["good", "normal", "bad", "very bad"].includes(type)
-    ? type
-    : "default";
-
-  return <div className={["Card", `Card_${cardType}`].join(" ")}>{text}</div>;
+const Card = ({ type, value }) => {
+  return (
+    <div className="Card">
+      <p className="Card_type">{type}</p>
+      <p className="Card_value">{value}</p>
+    </div>
+  );
 };
-
-Card.defaultProps = { type: "default" };
 
 export default Card;

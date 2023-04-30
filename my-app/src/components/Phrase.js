@@ -1,10 +1,14 @@
 import React from "react";
 
-const Phrase = () => {
+const Phrase = ({ phraseList }) => {
   return (
     <div className="Phrase">
-      <h2 className="Phrase_text">"This is Phrase"</h2>
-      <h3 className="Phrase_writer">- writer -</h3>
+      <h2 className="Phrase_text">
+        {phraseList[Math.floor(Math.random() * phraseList.length)].text}
+      </h2>
+      <h3 className="Phrase_writer">
+        {phraseList[Math.floor(Math.random() * phraseList.length)].writer}
+      </h3>
     </div>
   );
 };
