@@ -85,12 +85,17 @@ header {
 /* Phrase */
 .Phrase {
   background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 20rem;
   color: white;
   font-style: italic;
-  padding: 7.5rem 0;
+  padding: 8rem 2rem;
+}
+
+.Phrase_text,
+.Phrase_writer {
+  text-align: center;
+}
+
+.Phrase_writer {
+  margin-top: 1.3rem;
+  font-size: 1rem;
 }
