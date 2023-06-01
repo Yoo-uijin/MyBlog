@@ -30,19 +30,39 @@ header {
   text-shadow: 1px 1px 1px rgb(106, 106, 106);
 }
 
-.head_button {
-  position: relative;
-  border-radius: 5px;
-  background-color: black;
-  color: white;
-  padding: 0 0.625rem;
+.head_category {
+  list-style: none;
+  width: 15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
 }
+
+.head_right-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.temp_btn {
+  font-size: 1.1rem;
+  background-color: transparent;
+  border: none;
+}
+
+/* .head_login {
+  width: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
 
 /* Dropdown */
 .Dropdown {
   position: absolute;
-  right: 0;
-  top: 2.5rem;
+  right: 1rem;
+  top: 4rem;
   list-style: none;
   background-color: white;
   color: black;

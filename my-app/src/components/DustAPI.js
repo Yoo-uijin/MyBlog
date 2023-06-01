@@ -6,8 +6,8 @@ const URL = `https://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getMsrstnAccto
 
 const DustAPI = () => {
   const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const fetchData = async () => {
     try {
@@ -27,9 +27,13 @@ const DustAPI = () => {
     fetchData();
   }, []);
 
+  console.log(data);
+
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error...</div>;
   if (!data) return null;
+  if (data.coFlag === "통신장애")
+    return <div>미세먼지 측정소 통신장애... API 제공 불가 상황</div>;
 
   return (
     <>
